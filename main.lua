@@ -83,6 +83,7 @@ function love.update(dt)
                     balldx = -balldx
                 else
                     winner = "p2"
+                    p2score = p2score + 1
                     gamestate = 'end'
                     return
                 end
@@ -91,6 +92,7 @@ function love.update(dt)
                     balldx = -balldx
                 else
                     winner = "p1"
+                    p1score = p1score + 1
                     gamestate = 'end'
                     return
                 end
